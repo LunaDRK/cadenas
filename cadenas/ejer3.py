@@ -4,13 +4,6 @@ el usuario lo introduzca muestre por pantalla <NOMBRE> tiene <n> letras, donde <
 es el nombre de usuario en mayúsculas y <n> es el número de letras que tienen el nombre."""
 
 nombre = input("Introducir nombre:")
+nombre_mayusculas = nombre.upper()
 numero_letras = len(nombre)
-contador = 0
-numero_mayusculas = 0
-
-while contador < numero_letras:
-    if nombre[contador].isupper():
-        numero_mayusculas += 1
-    contador+=1
-
-print(f"tu nombre tiene {numero_mayusculas} mayusculas y tiene {numero_letras} letras")
+print(f"{nombre_mayusculas} tiene {numero_letras} letras")
